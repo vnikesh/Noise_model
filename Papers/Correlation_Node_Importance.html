@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p style="color:steelblue; font-size:40px">Correlation of Node Importance Measures: An Empirical Study through Graph Robustness</p>
+          
+              <p class="fa fa-file-pdf-o" style="font-size:48px;color:red;margin-left:10px"></p> <br><a href="http://www3.cs.stonybrook.edu/~leman/pubs/15-www-node-centrality-correlations.pdf" target="_blank" style="margin-left:10px">PDF</a> 
+			<br />
+             <a style="margin-left:10px" href="#">Spinger Link</a>
+        </div>
+
+
+        <div class="container">
+            <h2 style="color:steelblue">Summary</h2>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td style="color:steelblue">1.Title of the paper</td>
+                        <td>
+                            Correlation of Node Importance Measures: An Empirical Study through Graph Robustness
+                        
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">2. Noise Model - How did they perturb the network (did they provide an algorithm)
+                        <td>
+                            Compare and contrast 15 node-based graph attack strategies, with varying time complexities
+                            -The similarity between two strategies to be the weighted correlation between their rankings. (Rank-C)
+                            -Compare the strategies based on the characteristics of the top nodes that they target by the matching overlap and the separability between their feature vectors. (Topk-C)
+                            -Use the ranking provided by a strategy to remove the nodes one by one from a given graph.
+                            3 clusters of highly correlated node-based strategies, namely {PageRank15, PageRank50, Betweenness}, {Katz, Eigen-vector}, and {Degree, Closeness}.
+
+ 
+                     
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">3. What data sets did they use (also the number of edges and vertices)</td>
+                        <td>
+                            68 real-world graphs, spread across 4 categories (14 social, 12 biological, 36 infrastructures, and 6 information)
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">4. What property/measures of network are they looking at</td>
+                        <td>
+                            Eigen-vector or closeness centrality, degree and radius, PageRank, betweenness or closeness centrality, Katz index
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">
+                            5. How do they measure the difference in results
+                        </td>
+                        <td>
+                            -Compared the nodes picked by each attack strategy directly (Weight-Tau) or by mapping them to a feature space (Bi-Match, SVM-Sep)
+                            -Remove nodes from each graph in order of the ranked list produced by each attack strategy and this attack-driven study as another way to validate our clustering results.
+
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">6. Are there theoretical results--write the theorems</td>
+                        <td>
+                            No
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">7. What are the main conclusions--find it in the abstract and the conclusion</td>
+                        <td>
+                            The ﬁrst large-scale correlation analysis of attack strategies for graph robustness. Understanding of the strategies help in approximation of opportunities, where computationally expensive measures can be approximated by comparable cheaper ones, and a few strategies can be used as a proxy to an overall consensus.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p style="color:steelblue; font-size:40px">Weighted Graphs and Disconnected Components
+
+</p>
+
+            <p class="fa fa-file-pdf-o" style="font-size:48px;color:red;margin-left:10px"></p> <br><a style="margin-left:10px" href="https://pdfs.semanticscholar.org/ffec/9634f3757a38f2f54911f68f74d5f71bc2ea.pdf" target="_blank">PDF</a>
+            <br />
+            <a style="margin-left:10px" href="#">Spinger Link</a>
+        </div>
+
+
+        <div class="container">
+            <h2 style="color:steelblue">Summary</h2>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td style="color:steelblue">1.Title of the paper</td>
+                        <td>Weighted Graphs and Disconnected Components</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">2. Noise Model - How did they perturb the network (did they provide an algorithm).</tdstyle="color:steelblue">
+                        <td>Generative “Butterﬂy” model</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">3. What data sets did they use (also the number of edges and vertices)</td>
+                        <td>Both uni and bipartite, and both weighted and unweighted graphs.
+-- NIPS1, Arxiv and Patent patent citation graphs, no weighting scheme
+-- IMDB indicates movie-actor information
+-- Netﬂix, NetTraﬃc, BlogNet and PostNet, Auth-Conf, Key-Conf, and Auth-Key
+-- CampOrg and CampIndiv are bipartite graphs from U.S. Federal Election Commission
+-- Largest graph (CampIndiv) had 6 million nodes and 10 million edges, with annual time-stamps
+</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">4. What property/measures of network are they looking at</td>
+                        <td>Weighted edges, nodes, shrinking diameters, densiﬁcation power law, burstiness and Entropy Plots</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">
+                            5. How do they measure the difference in results
+                        </td>
+                        <td>Simulated the model 10 times for 100,000 nodes, with phost = 0.5 and plink = 0.3. For each run the model exhibited power law in- and out-degree.</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">6. Are there theoretical results--write the theorems</td>
+                        <td>Theorem 1. For a given host, the number of visits an arriving node forms follows power-law out-degree with exponent −2.
+Proof. Taking phost constant, the expected number of steps y that an arriving node will take is (1/(1−pstep))-1.
+</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">7. What are the main conclusions--find it in the abstract and the conclusion</td>
+                        <td>Proposal: <br>-Observe that the non-giant connected components seem to stabilize in size using effective diameter, Burstiness and Entropy Plots.
+<br>-Observe the weights on the edges follow several power laws with surprising exponents -- WPL, SPL
+<br>-Propose an intuitive, generative model for graph growth that obeys observed patterns – butterflymodel
+<br>Conclusion: <br>Model in robust, as parameters may be chosen over a large range of values and produce realistic graphs.
+</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

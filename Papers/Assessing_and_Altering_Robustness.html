@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p style="color:steelblue; font-size:40px">Assessing and Altering Robustness of Large Graphs</p>
+
+            <p class="fa fa-file-pdf-o" style="font-size:48px;color:red;margin-left:10px"></p> <br><a href="http://www3.cs.stonybrook.edu/~leman/pubs/14-techreport-SBU-CSE-14-1.pdf" target="_blank" style="margin-left:10px">PDF</a>
+            <br />
+            <a style="margin-left:10px" href="#">Spinger Link</a>
+        </div>
+
+
+        <div class="container">
+            <h2 style="color:steelblue">Summary</h2>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td style="color:steelblue">1.Title of the paper</td>
+                        <td>Assessing and Altering Robustness of Large Graphs</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">2. Noise Model - How did they perturb the network (did they provide an algorithm).</tdstyle="color:steelblue">
+                        <td>Two manipulation problems to degrade graph robustness is edge and node removal (respectively called MIOBI-BREAKEDGE and MIOBI-BREAKNODE)
+improve robustness via edge addition (called MIOBI-MAKEEDGE)
+</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">3. What data sets did they use (also the number of edges and vertices)</td>
+                        <td>Large graphs, with near-linear complexity in time and space, datasets of various domains like email, P2P, Internet AS topology.
+--http://snap. stanford.edu/data/
+</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">4. What property/measures of network are they looking at</td>
+                        <td>Nodes, edges, undirected unipartite irreducible graphs, connectivity, subgraph centrality, redundancy (alternative paths between the nodes), clustering coefﬁcient, </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">
+                            5. How do they measure the difference in results
+                        </td>
+                        <td>Evaluated the proposed methods on a long list of real-world datasets across various domains for effectiveness and scalability</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">6. Are there theoretical results--write the theorems</td>
+                        <td>Lemma1 Given a perturbation ∆A to a matrix A, its eigenvalues can be updated by ∆λj = uj’∆Auj.
+Lemma2 Given a perturbation ∆A to a matrix A, its eigenvectors can be updated by
+
+
+                            <img src="../img/formula.png" alt="Mountain View" style="width:150px;height:50px;">
+
+Lemma 3 Complexity of MIOBI-BREAKEDGE: The time cost of Alg .1 is O (kmt+ knt2). The space cost of Alg. 1 is O (m + nt + k)
+Lemma4 Complexity of MIOBI-BREAKNODE: The time cost of Alg .2 is O (kmt+ knt2). The space cost is O (m + nt + k).
+Lemma5 Complexity of MIOBI-MAKEEDGE: The time cost of Alg.3 is O (mt+ kd2maxt + knt2). The space cost is O (m + nt + k).
+</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">7. What are the main conclusions--find it in the abstract and the conclusion</td>
+                        <td>Proposal:<br> 
+-Analyze list of proposed robustness measures (natural connectivity)<br>
+-Formulate three graph manipulation problems involving node and edge deletions to degrade, and edge additions to improve the robustness of a given graph (Make It or Break It)<br>
+-Propose the ﬁrst principled alteration algorithms that directly optimize the corresponding robustness measure<br>
+Conclusion: <br>Proposed effective, scalable, and adaptive algorithms to solve above problems which are founded on a principled framework based on theoretical foundations.
+</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p style="color:steelblue; font-size:40px">Self-correcting networks: Function, robustness, and motif distributions in biological signal processing</p>
+
+            <p class="fa fa-file-pdf-o" style="font-size:48px;color:red;margin-left:10px"></p> <br><a style="margin-left:10px" href="http://www.fhi-berlin.mpg.de/complsys/OAPdf/2008/kaluza-vingron-mikhailov-08.pdf" target="_blank">PDF</a>
+            <br />
+            <a style="margin-left:10px" href="#">Spinger Link</a>
+        </div>
+
+
+        <div class="container">
+            <h2 style="color:steelblue">Summary</h2>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td style="color:steelblue">1.Title of the paper</td>
+                        <td>Self-correcting networks: Function, robustness, and motif distributions in biological signal processing</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">2. Noise Model - How did they perturb the network (did they provide an algorithm).</tdstyle="color:steelblue">
+                        <td>Path mutation a path connecting an input node and an output node and passing through the middle nodes is randomly generated. Subsequently, this path is either added to the network G or subtracted from it, yielding the modiﬁed network G’. </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">3. What data sets did they use (also the number of edges and vertices)</td>
+                        <td>a simple ﬂow distribution model of signal processing</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">4. What property/measures of network are they looking at</td>
+                        <td>
+                            -- A three-node motif is a subgraph formed by three network elements and their connections. For directed networks, there are only 13 different motifs.
+                            -- The mean degrees are mean numbers of connections per a node. (increased in the networks optimized for link robustness)
+                            -- Clustering coefﬁcients of robust networks (higher for networks robust against link deletions)
+                            -- Average path length (APL) between input and output nodes (shortest paths)
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">
+                            5. How do they measure the difference in results
+                        </td>
+                        <td>To determine motif distributions of designed networks, the software package MFINDER has been used. For each network G’, this software determines its motif distributions with respect to motifs of different sizes.</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">6. Are there theoretical results--write the theorems</td>
+                        <td></td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">7. What are the main conclusions--find it in the abstract and the conclusion</td>
+                        <td>Proposal:
+<br>-By running evolutionary optimization algorithms, large ensembles of networks with the same size and the same output patterns, but robust against different kinds of local damage or distributed noise, are designed.
+<br>-This allows us to analyze how statistical properties of self-correcting networks depend on the kind of random perturbations against which they are robust.
+<br>-Special attention is paid to motif distributions of networks.<br>
+Conclusion: <br>The network function does not yet determine its superfamily
+</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

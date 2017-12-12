@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p style="color:steelblue; font-size:40px">Topological properties of robust biological and computational networks</p>
+
+            <p class="fa fa-file-pdf-o" style="font-size:48px;color:red;margin-left:10px"></p> <br><a style="margin-left:10px" href="http://rsif.royalsocietypublishing.org/content/royinterface/11/96/20140283.full.pdf" target="_blank">PDF</a>
+            <br />
+            <a style="margin-left:10px" href="#">Spinger Link</a>
+        </div>
+
+
+        <div class="container">
+            <h2 style="color:steelblue">Summary</h2>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td style="color:steelblue">1.Title of the paper</td>
+                        <td>Topological properties of robust biological and computational networks</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">2. Noise Model - How did they perturb the network (did they provide an algorithm).</td>
+                        <td>Infection model - adopt a SI model for virus propagation where model proceeds in discrete time steps and in each step, all infected nodes attempt to pass the virus to each uninfected neighbor independently with some probability.</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">3. What data sets did they use (also the number of edges and vertices)</td>
+                        <td>- Global interaction network for yeast by integrating protein–protein interactions and protein–DNA interactions
+--Metabolic networks for 75 bacterial species were from Ma & Zeng
+-- The C. elegans neuronal network was collected from Varshney et al.
+--For evaluating residual connectivity: Gnutella peer-to-peer (P2P) file-sharing network, the graph of routers (autonomous systems) representing the Internet
+</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">4. What property/measures of network are they looking at</td>
+                        <td>Robustness (environmental and signaling noise), node’s degree, modules (sub-networks), module essentiality (equal to the proportion of essential genes in the module), average Jaccard coefficient between each gene in the module (calculates module essentiality), low residual connectivity (after infection because the virus will have spread to many nodes), residual distance (the shortest path routeing distance between all pairs)</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">
+                            5. How do they measure the difference in results
+                        </td>
+                        <td>Tested on other networks: protein –protein interactions and protein –DNA interactions for the bacteria Escherichia coli</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">6. Are there theoretical results--write the theorems</td>
+                        <td></td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">7. What are the main conclusions--find it in the abstract and the conclusion</td>
+                        <td>Proposal:
+<br>-Propose a simple change to the evolutionary gene duplication model (model of Vazquez et al.) which gives rise to the rich range of module topologies observed within real networks.
+<br>-Apply these observations to evaluate and design communication networks that are specifically optimized for noisy or malicious environments.
+<br>-Joint analysis of biological and computational networks lead to novel algorithms and insights benefiting both fields.
+</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

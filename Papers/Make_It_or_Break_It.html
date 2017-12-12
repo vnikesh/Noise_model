@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p style="color:steelblue; font-size:40px">Make It or Break It: Manipulating Robustness in Large Networks</p>
+
+            <p class="fa fa-file-pdf-o" style="font-size:48px;color:red;margin-left:10px"></p> <br><a style="margin-left:10px" href="http://epubs.siam.org/doi/abs/10.1137/1.9781611973440.37" target="_blank">PDF</a>
+            <br />
+            <a style="margin-left:10px" href="#">Spinger Link</a>
+        </div>
+
+        <div class="container">
+            <h2 style="color:steelblue">Summary</h2>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td style="color:steelblue">1.Title of the paper</td>
+                        <td>
+                            Make It or Break It: Manipulating Robustness in Large Networks
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">2. Noise Model - How did they perturb the network (did they provide an algorithm).</tdstyle="color:steelblue">
+                        <td>
+                            Maximally decrease/increase the robustness of a given network by deleting/introducing nodes or links respectively -- novel framework called MIOBI (for Make It or Break It)
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">3. What data sets did they use (also the number of edges and vertices)</td>
+                        <td>
+                            http://snap.stanford.edu/data/
+                            The Oregon Autonomous System (AS) graphs are AS-level router networks inferred from Oregon route views, and were collected once a week, for 9 consecutive weeks. Gnutella graphs are the peer-to-peer (P2P) connectivity networks collected daily, over 5 consecutive days.
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">4. What property/measures of network are they looking at</td>
+                        <td>
+                            eigenvalue of G (V, E), 
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">
+                            5. How do they measure the difference in results
+                        </td>
+                        <td>
+                            The Oregon A-I datasets, sorted by m, to evaluate the scalability of the proposed algorithms.
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">6. Are there theoretical results--write the theorems</td>
+                        <td>
+                            MIOBI-BREAKEDGE competitor strategies (11).
+                            ‘rand’: randomly picked k edges (avg.’ed over 10 runs); edges (p, r) with (2) ‘rich-rich’: highest dpdr; (3) ‘poor poor’: smallest dpdr; (4) ‘rich-poor’: highest |dp − dr|; (5) ‘betw’: highest edge-betweenness; (6) ‘embed’: highest embeddedness [14]; (7) ‘resist’: highest effective resistance [24]; (8) ‘netmelt’: highest up1ur1 [26]; 
+                            (9) ‘line-deg’: highest degree in the line graph(10) ‘line-eig’: highest eigen-centrality in the line graph; 
+                            and (11) ‘line-page’: highest PageRank score in the line graph.
+                            MIOBI-BREAKNODE competitor strategies (5).
+                            ‘rand’: randomly picked k nodes (avg.’ed over 10 runs); nodes i with (2) ‘max-deg’: highest degree; (3) ‘eig’: highest eigen-centrality; (4) ‘page’: highest Pagerank score; and (5) ‘cluster’: highest local clustering coefficient.
+                            MIOBI-MAKEEDGE competitor strategies (5).
+                            ‘rand’: edges between randomly picked nodes (avg.’ed over 10runs); (2) ‘rich-rich’: edges between nodes with highest degrees; (3) ‘poor-poor’: edges between nodes with lowest degrees (same as ‘preferential addition’ in [3]); (4) ‘rich-poor’: edges (p, r) ∈/ E with highest |dp − dr|; and (5) ‘netgel’: edges (p, r) ∈/ E with highest up1ur1 [26];
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">7. What are the main conclusions--find it in the abstract and the conclusion</td>
+                        <td>
+                            Proposal: <br>How to manipulate the robustness of a large network by modifying its underlying link structure.<br>
+                            Conclusion: <br>Identified natural connectivity as a reliable measure, as it effectively quantifies the existence of alternative paths in a network.
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

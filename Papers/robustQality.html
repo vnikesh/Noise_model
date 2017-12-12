@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p style="color:steelblue; font-size:40px">A Robust Quality Metric for Noisy Incomplete Networks</p>
+         
+            <p class="fa fa-file-pdf-o" style="font-size:48px;color:red;margin-left:10px"></p> <br><a style="margin-left:10px" href="../PDFs/A Robust Quality Metric for Noisy Incomplete Networks.pdf" target="_blank">PDF</a>
+            <br />
+            <a style="margin-left:10px" href="#">Spinger Link</a>
+        </div>
+
+
+        <div class="container">
+            <h2 style="color:steelblue">Summary</h2>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td style="color:steelblue">1.Title of the paper</td>
+                        <td>A Robust Quality Metric for Noisy Incomplete Networks</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">2. Noise Model - How did they perturb the network (did they provide an algorithm).</tdstyle="color:steelblue">
+                        <td>Uniform noise model, Crawled noise model, Censored noise model</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">3. What data sets did they use (also the number of edges and vertices)</td>
+                        <td>Both synthetic and real world (LFR Benchmark – nodes=1000, Football, ca-CondMat and ca-HepPh, Email Enron)</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">4. What property/measures of network are they looking at</td>
+                        <td>Vertices, edges, permanence (ﬁrst unifying metric to handle different accuracy aspects of noisy, incomplete networks), closeness centrality and PageRank</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">
+                            5. How do they measure the difference in results
+                        </td>
+                        <td>-For each network, apply noise models at different noise levels (0% to 30%), and create ten networks for each case on which the results are averaged.
+--For the varying noise levels, compute the value of the network features for each network in the set as well as the values of permanence, modularity, closeness centrality and PageRank.
+--Then compute the Pearson correlation coefﬁcient of these values
+</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">6. Are there theoretical results--write the theorems</td>
+                        <td>Baseline sampling algorithms </td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">7. What are the main conclusions--find it in the abstract and the conclusion</td>
+                        <td>Proposal:
+<br>-Permanence is an excellent indicator of how a network changes under noise
+<br>-Vertices with high permanence are very effective seeds from message broadcast
+<br>-Sampling based on high permanence vertices can retain the cluster structure of the network
+<br>Conclusion: <br>Permanence is a robust metric for evaluating and analyzing noisy incomplete networks
+</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p style="color:steelblue; font-size:40px">Understanding Stability of Noisy Networks
+through Centrality Measures and Local Connections
+</p>
+
+            <p class="fa fa-file-pdf-o" style="font-size:48px;color:red;margin-left:10px"></p> <br><a style="margin-left:10px" href="https://arxiv.org/pdf/1609.05402v1.pdf" target="_blank">PDF</a>
+            <br />
+            <a style="margin-left:10px" href="#">Spinger Link</a>
+        </div>
+
+
+        <div class="container">
+            <h2 style="color:steelblue">Summary</h2>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td style="color:steelblue">1.Title of the paper</td>
+                        <td>Understanding Stability of Noisy Networks
+through Centrality Measures and Local Connections
+</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">2. Noise Model - How did they perturb the network (did they provide an algorithm).</tdstyle="color:steelblue">
+                        <td>Consider an additive model, where a percentage of edges, selected from the complementary graph at random, are added to the existing network. Focus is only on edge addition because missing edges can be predicted using link prediction algorithms. Therefore, understanding the effect of extraneous edges is the more critical problem.</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">3. What data sets did they use (also the number of edges and vertices)</td>
+                        <td>Experiments on 10 real-world networks, each network over 10 perturbed networks per noise level.</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">4. What property/measures of network are they looking at</td>
+                        <td>Degree, Closeness and Betweenness Centrality.</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">
+                            5. How do they measure the difference in results
+                        </td>
+                        <td>Measuring stability - Compute the Jaccard Index (JI) to see how many of the top k vertices in the original network are also among the top k vertices in the perturbed network.
+The highest value of JI is 1 and the lowest value is 0
+</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">6. Are there theoretical results--write the theorems</td>
+                        <td>Of all the possible edges in a graph with |V| vertices we pick an edge with probability  |V; ,0 ≤  ≤|V|. If the edge is not part of the network, it is added to the network. If the degree of a vertex is d, then it has n−1−d nodes that can get added due to perturbation. Therefore, the expected number of edges added to it will be |V| (n − 1 − d). Thus vertices with higher degree will have fewer edge additions.</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">7. What are the main conclusions--find it in the abstract and the conclusion</td>
+                        <td>Proposal: <br>The local structure around the high
+centrality vertices, that significantly affect the stability.<br>
+Conclusion: <br>Networks where the high centrality vertices are very well-connected and the stability of the rankings of nodes depends on the number of top ranked nodes (k) being investigated.
+</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p style="color:steelblue; font-size:40px">Where Graph Topology Matters: The Robust Subgraph Problem</p>
+
+            <p class="fa fa-file-pdf-o" style="font-size:48px;color:red;margin-left:10px"></p> <br><a style="margin-left:10px" href="http://www.andrew.cmu.edu/user/lakoglu/pubs/15-robust-subgraphs.pdf" target="_blank">PDF</a>
+            <br />
+            <a style="margin-left:10px" href="#">Spinger Link</a>
+        </div>
+
+
+        <div class="container">
+            <h2 style="color:steelblue">Summary</h2>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td style="color:steelblue">1.Title of the paper</td>
+                        <td>Where Graph Topology Matters: The Robust Subgraph Problem</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">2. Noise Model--how did they perturb the network (did they provide an algorithm).</tdstyle="color:steelblue">
+                        <td>-Greedy Top-down Search Approach (iteratively and greedily removes the nodes one by one from the given graph G) - Greedy Randomized Adaptive Search Procedure Approach</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">3. What data sets did they use (also the number of edges and vertices)</td>
+                        <td>synthetic and real-world graphs</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">4. What property/measures of network are they looking at</td>
+                        <td>natural connectivity (Graph Robustness), average degree, edge-surplus</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">
+                            5. How do they measure the difference in results
+                        </td>
+                        <td>compare results to dense subgraphs found by Charikar’s and by Tsourakakis et al.’s two algorithms (Greedy and local search)</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">6. Are there theoretical results--write the theorems</td>
+                        <td>THEOREM 3.1. The optimal RLS-PROBLEM is NP-Hard.
+THEOREM 3.2. Robustness λ ̄ is not semi-hereditary. That is, a graph with λ ̄ = α and s > 1 nodes is not always a strict superset of some graph with s − 1 nodes and λ ̄ ≥ α.
+THEOREM 3.3. Robustness λ ̄ is not subgraph monotonic.
+</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">7. What are the main conclusions--find it in the abstract and the conclusion</td>
+                        <td>Proposal: <br>Turn attention to local robustness and pose a novel problem in the lines of subgraph mining
+<br>-Show that the RLS- PROBLEM is NP-hard
+<br>-Propose two heuristic algorithms based on top-down (GREEDYRLS) and bottom-up (GRASP-RLS) search strategies
+<br>-Introduce three practical variants of the RLS-PROBLEM
+<br>Conclusion: <br>Subgraphs are of higher robustness than densest subgraphs even at lower densities
+</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p style="color:steelblue; font-size:40px">Robustness of skeletons and salient features in networks</p>
+
+            <p class="fa fa-file-pdf-o" style="font-size:48px;color:red;margin-left:10px"></p> <br><a style="margin-left:10px" href="https://pdfs.semanticscholar.org/531e/ef3b736ef4cf5e6e1440a5ba7f348d17c9d1.pdf" target="_blank">PDF</a>
+            <br />
+            <a style="margin-left:10px" href="#">Spinger Link</a>
+        </div>
+
+
+        <div class="container">
+            <h2 style="color:steelblue">Summary</h2>
+
+            <table class="table table-striped">
+
+                <tbody>
+                    <tr>
+                        <td style="color:steelblue">1.Title of the paper</td>
+                        <td>Robustness of skeletons and salient features in networks</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">2. Noise Model - How did they perturb the network (did they provide an algorithm).</tdstyle="color:steelblue">
+                        <td>Deleting nodes or links, or by randomly rewiring links. This is advantageous since it reduces the complexity of the system while still preserving scale-free properties
+node percolation/ link percolation: fraction of links or nodes removed from the network
+link switching: rewiring is the expectation value of the degree of each node
+</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">3. What data sets did they use (also the number of edges and vertices)</td>
+                        <td>Three different transportation networks (Airport, Cargo, Migration), three biological networks (Neural, Food Web, Metabolic) and one network model (work by White et al).
+
+</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">4. What property/measures of network are they looking at</td>
+                        <td>‘Skeletons’ or ‘backbones’ (reduced networks containing the most important structures or pathways), nodes N and links L</td>
+
+                    </tr>
+                    <tr>
+                        <td style="color:steelblue">
+                            5. How do they measure the difference in results
+                        </td>
+                        <td>Study skeleton methods perform in the face of noisy and missing data by applying them to perturbed versions of our networks and comparing their results to those obtained for the original networks.</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">6. Are there theoretical results--write the theorems</td>
+                        <td>Dijkstra’s algorithm</td>
+
+                    </tr>
+
+                    <tr>
+                        <td style="color:steelblue">7. What are the main conclusions--find it in the abstract and the conclusion</td>
+                        <td>Proposal: <br>How salient network extraction methods (salience skeleton, disparity ﬁlter backbone) perform in the face of noisy or incomplete networks.<br>
+Conclusion:
+<br>-Global statistics for skeletons can be accurately inferred even for noisy and incomplete network data.
+<br>-Helps to understand how skeletons respond to damage to the network itself, as in an attack scenario.
+</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
