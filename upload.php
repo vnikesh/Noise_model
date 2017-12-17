@@ -19,8 +19,7 @@ if (isset($_POST['submit'])) {
 				$fileNameNew = uniqid('', true).".".$fileActualExt;
 				$fileDestination = 'uploads/'.$fileNameNew;
 				move_uploaded_file($fileTmpName, $fileDestination);
-				echo "File uploaded Successfully"
-				header("refresh:2; url=index.html");
+				header('Location: index.html?uploadsuccess');
 			} else {
 				echo " Your file is too big!";
 			}
